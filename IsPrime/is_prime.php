@@ -1,13 +1,20 @@
-
-/*
-Is Prime?
-Write a php function called is_prime that checks the number if it's prime or not!
-If number is prime print: "The number (X) is prime", if not print: "number (X) is not prime".
- */
-
-
- function is_prime($n){
-   // code goes here
-
-
- }
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ 	<?php 
+ 	function is_prime($n){
+ 		for( $i = 2; $i < $n; $i++) {
+ 			if($n % $i === 0) {
+ 				return "The number is prime";
+ 			} 
+ 		}
+ 		return "number is not prime";
+ 	}
+ 	echo is_prime(19);
+ 	?>
+ </body>
+ </html>
+ 
